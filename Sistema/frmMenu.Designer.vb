@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class frmMenu
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    'Descartar substituições de formulário para limpar a lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -14,18 +14,61 @@ Partial Class frmMenu
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
+    'Exigido pelo Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
+    'Pode ser modificado usando o Windows Form Designer.  
+    'Não o modifique usando o editor de códigos.
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        mnMenu = New MenuStrip()
+        CadastrosToolStripMenuItem = New ToolStripMenuItem()
+        UsuáriosToolStripMenuItem = New ToolStripMenuItem()
+        mnMenu.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' mnMenu
+        ' 
+        mnMenu.Items.AddRange(New ToolStripItem() {CadastrosToolStripMenuItem})
+        mnMenu.Location = New Point(0, 0)
+        mnMenu.Name = "mnMenu"
+        mnMenu.Size = New Size(800, 24)
+        mnMenu.TabIndex = 1
+        mnMenu.Text = "MenuStrip1"
+        ' 
+        ' CadastrosToolStripMenuItem
+        ' 
+        CadastrosToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {UsuáriosToolStripMenuItem})
+        CadastrosToolStripMenuItem.Name = "CadastrosToolStripMenuItem"
+        CadastrosToolStripMenuItem.Size = New Size(71, 20)
+        CadastrosToolStripMenuItem.Text = "Cadastros"
+        ' 
+        ' UsuáriosToolStripMenuItem
+        ' 
+        UsuáriosToolStripMenuItem.Name = "UsuáriosToolStripMenuItem"
+        UsuáriosToolStripMenuItem.Size = New Size(180, 22)
+        UsuáriosToolStripMenuItem.Text = "Usuários"
+        ' 
+        ' frmMenu
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(mnMenu)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        IsMdiContainer = True
+        MainMenuStrip = mnMenu
+        MaximizeBox = False
+        Name = "frmMenu"
+        Text = "Menu"
+        mnMenu.ResumeLayout(False)
+        mnMenu.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
+    Friend WithEvents mnMenu As MenuStrip
+    Friend WithEvents CadastrosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UsuáriosToolStripMenuItem As ToolStripMenuItem
 End Class
