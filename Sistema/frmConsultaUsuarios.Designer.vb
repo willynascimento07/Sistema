@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmCadastrosPessoas
+Partial Class frmConsultaUsuarios
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,9 +22,18 @@ Partial Class frmCadastrosPessoas
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "frmCadastrosPessoas"
+        SuspendLayout()
+        ' 
+        ' frmConsultaUsuarios
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "frmConsultaUsuarios"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Consulta Usuário"
+        ResumeLayout(False)
     End Sub
 End Class

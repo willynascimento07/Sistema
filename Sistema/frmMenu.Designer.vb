@@ -25,6 +25,7 @@ Partial Class frmMenu
         mnMenu = New MenuStrip()
         CadastrosToolStripMenuItem = New ToolStripMenuItem()
         UsuáriosToolStripMenuItem = New ToolStripMenuItem()
+        PessoasToolStripMenuItem = New ToolStripMenuItem()
         mnMenu.SuspendLayout()
         SuspendLayout()
         ' 
@@ -39,7 +40,7 @@ Partial Class frmMenu
         ' 
         ' CadastrosToolStripMenuItem
         ' 
-        CadastrosToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {UsuáriosToolStripMenuItem})
+        CadastrosToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {UsuáriosToolStripMenuItem, PessoasToolStripMenuItem})
         CadastrosToolStripMenuItem.Name = "CadastrosToolStripMenuItem"
         CadastrosToolStripMenuItem.Size = New Size(71, 20)
         CadastrosToolStripMenuItem.Text = "Cadastros"
@@ -47,8 +48,14 @@ Partial Class frmMenu
         ' UsuáriosToolStripMenuItem
         ' 
         UsuáriosToolStripMenuItem.Name = "UsuáriosToolStripMenuItem"
-        UsuáriosToolStripMenuItem.Size = New Size(180, 22)
+        UsuáriosToolStripMenuItem.Size = New Size(119, 22)
         UsuáriosToolStripMenuItem.Text = "Usuários"
+        ' 
+        ' PessoasToolStripMenuItem
+        ' 
+        PessoasToolStripMenuItem.Name = "PessoasToolStripMenuItem"
+        PessoasToolStripMenuItem.Size = New Size(119, 22)
+        PessoasToolStripMenuItem.Text = "Pessoas"
         ' 
         ' frmMenu
         ' 
@@ -62,6 +69,7 @@ Partial Class frmMenu
         MaximizeBox = False
         Name = "frmMenu"
         Text = "Menu"
+        WindowState = FormWindowState.Maximized
         mnMenu.ResumeLayout(False)
         mnMenu.PerformLayout()
         ResumeLayout(False)
@@ -71,4 +79,5 @@ Partial Class frmMenu
     Friend WithEvents mnMenu As MenuStrip
     Friend WithEvents CadastrosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuáriosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PessoasToolStripMenuItem As ToolStripMenuItem
 End Class
