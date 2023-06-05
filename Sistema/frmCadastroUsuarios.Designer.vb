@@ -36,6 +36,7 @@ Partial Class frmCadastroUsuarios
         btnExcluir = New Button()
         btnConsultar = New Button()
         btnFechar = New Button()
+        ofdFoto = New OpenFileDialog()
         grbCodigo.SuspendLayout()
         grbNome.SuspendLayout()
         grbSenha.SuspendLayout()
@@ -198,6 +199,10 @@ Partial Class frmCadastroUsuarios
         btnFechar.TextAlign = ContentAlignment.MiddleRight
         btnFechar.UseVisualStyleBackColor = True
         ' 
+        ' ofdFoto
+        ' 
+        ofdFoto.FileName = "OpenFileDialog1"
+        ' 
         ' frmCadastroUsuarios
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -243,4 +248,5 @@ Partial Class frmCadastroUsuarios
     Friend WithEvents btnExcluir As Button
     Friend WithEvents btnConsultar As Button
     Friend WithEvents btnFechar As Button
+    Friend WithEvents ofdFoto As OpenFileDialog
 End Class
